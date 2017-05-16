@@ -94,7 +94,7 @@ architecture rtl of ksa_task3 is
 	variable temp_si, temp_ji, f, qm_data	: std_logic_vector(7 downto 0)	:= x"00";
 	variable mod_temp 							: integer								:= 0;
 	variable current_state						: state_type;
-	variable secretKey_new						: unsigned(23 downto 0)				:= x"000000";
+	variable secretKey_new						: unsigned(23 downto 0)	:= x"000000";
 	begin
 		if reset = '1' then
 			current_state := state_init;
